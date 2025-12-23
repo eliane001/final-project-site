@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CHANGE THIS TITLE PER PAGE -->
+    <title>River Avenue Skate Park</title>
+
+    <!-- Fonts (keep) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Text:ital@0;1&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Lexend:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Page-specific tweaks only -->
+    <style>
+        body {
+            font-family: American Typewriter, serif;
+            font-size: 25px;
+            margin: 0;
+            padding: 0;
+            background-color: #525770;
+            color: #0b1c11;
+        }
+
+        h1 {
+            font-family: "American Typewriter", serif;
+            font-size: 2.5em;
+            text-align: center;
+        }
+    </style>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- CHANGE body class PER PAGE (home-page, wonder-wheel-page, etc.) -->
+
+<body class="home-page">
+
+    <!-- ================= HEADER (KEEP STRUCTURE) ================= -->
+    <header>
+        <div class="topbar">
+            <a href="index.html" class="logo">South Bronx Guide</a>
+
+            <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false"
+                aria-label="Toggle menu">
+               <span class="menu-icon"></span>
+
+            </button>
+        </div>
+
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <!-- CHANGE LINKS IF NEEDED -->
+                <li><a href="guide-macombs.html">Macombs Dam Park</a></li>
+                <li><a href="guide-market.html">Bronx Terminal Market</a></li>
+                <li><a href="guide-theater.html">Pregones Theater</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN CONTENT (CHANGE FREELY) ================= -->
+    <main>
+
+        <!-- PAGE HEADING -->
+        <h1>River Avenue Skate Park </h1>
+
+        <!-- INTRO TEXT -->
+        <p class="intro">A skate park that is visible right as the Bronx-bound 4 train exits the underground tunnel! </p>
+        <p class="explore"> </p>
+
+        <!-- VIDEO SECTION (OPTIONAL) -->
+        <div class="videoWrapper ratio-16-9">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/AZQ2ROrfW-A?si=kgj_ZUzb3EJbcYpv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- FEATURED SECTION -->
+        <section class="featured-text-background">
+            <h2>Significance of River Avenue Skate Park</h2>
+
+    <figure>
+    <img src="images/river-avenue-skate-park.jpg"
+         alt="Skate Park"
+         class="responsive-img">
+
+    <figcaption>
+        <a href="https://www.flickr.com/photos/imjustwalkin/7186250564">
+            Photo by Matt Green
+        </a>
+    </figcaption>
+</figure>
+
+
+    <p class="wonder-wheel">
+               Located just a three-minute walk from the 161 St station, this skate park was created as part of the same initiative as Macombs Dam Park to return public space to the neighborhood after the new stadium's construction. What used to be a parking lot is now a vibrant local hub where skaters gather every day!
+
+            </p>
+
+        </section>
+        <div class="more-info">
+  <h3>More Info</h3>
+  <ul class="more-info-container">
+    <li><a href="https://en.wikipedia.org/wiki/River_Avenue_Skate_Park">Wikipedia: River Avenue Skate Park</a></li>
+    <li><a href="https://www.nyctourism.com/places/river-avenue-skate-park/">NYC Tourism - River Avenue Skate Park</a></li>
+  </ul>
+</div>
+
+
+        <nav id="pagination" aria-label="Pagination">
+            <a class="btn" rel="prev" href="guide-macombs.html">← Previous</a>
+            <a class="btn" rel="next" href="guide-market.html">Next →</a>
+        </nav>
+    </main>
+    <!-- ================= FOOTER (KEEP) ================= -->
+    <footer>
+        <p>Site by Eliane Jimenez</p>
+    </footer>
+
+    <!-- ================= NAV SCRIPT (KEEP) ================= -->
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', () => {
+            const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', String(!expanded));
+            menu.classList.toggle('is-open');
+        });
+    </script>
+
+</body>
+
+</html>

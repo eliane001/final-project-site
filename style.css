@@ -1,0 +1,169 @@
+/* ================= VARIABLES ================= */
+:root {
+    --space-unit: 1rem;
+    --clr-nav: #c8ad11;
+    --clr-nav-hover: #333;
+    --clr-nav-background: #212434;
+}
+
+
+/* ================= LAYOUT ================= */
+main {
+    padding: 0 var(--space-unit);
+    max-width: 70ch;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================= TYPOGRAPHY ================= */
+.intro {
+    font-size: 1.75rem;
+    font-family: Crimson Pro, serif;
+    color: #c8ad11;
+    text-align: center;
+}
+
+.explore {
+    font-size: 1.25rem;
+    font-family: Crimson Pro, serif;
+    text-align: center;
+}
+
+/* ================= VIDEO ================= */
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-bottom: 4rem;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ================= FEATURED SECTION ================= */
+.featured-text-background {
+    background-color: #78B09C;
+    padding: 2rem;
+}
+.featured-text-background h2 {
+    text-align: center;
+}
+
+
+.featured-text-background p {
+    color: #0b1c11;
+    font-family: Crimson Pro, serif;
+}
+
+/* ================= GRID ================= */
+.guides-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.guide {
+    background-color: #78B09C;
+    border: 4px solid #26142a;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* ================= FIGCAPTIONS ================= */
+figure {
+    position: relative;
+    margin: 0;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(243, 242, 234, 0.85);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+figcaption a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* ================= NAVIGATION ================= */
+header {
+    background: var(--clr-nav-background);
+    color: var(--clr-nav);
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo {
+    color: var(--clr-nav);
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.menu.is-open {
+    max-height: 80vh;
+}
+
+.menu a {
+    display: block;
+    padding: 1rem;
+    color: var(--clr-nav);
+    text-align: center;
+    text-decoration: none;
+}
+/* ================= HAMBURGER ICON ================= */
+.menu-icon {
+    width: 24px;
+    height: 2px;
+    background: #525770;
+    display: block;
+    position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background: #525770;
+    position: absolute;
+    left: 0;
+}
+
+.menu-icon::before {
+    top: -7px;
+}
+
+.menu-icon::after {
+    top: 7px;
+}
+
+/* ================= FOOTER ================= */
+footer p {
+    text-align: center;
+    color: #c8ad11;
+}

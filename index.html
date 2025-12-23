@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CHANGE THIS TITLE PER PAGE -->
+    <title>Main Page</title>
+
+    <!-- Fonts (keep) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Text:ital@0;1&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Lexend:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Page-specific tweaks only -->
+    <style>
+        body {
+            font-family: American Typewriter, serif;
+            font-size: 25px;
+            margin: 0;
+            padding: 0;
+            background-color: #525770;
+            color: #0b1c11;
+        }
+
+        h1 {
+            font-family: "American Typewriter", serif;
+            font-size: 2.5em;
+            text-align: center;
+        }
+    </style>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- CHANGE body class PER PAGE (home-page, wonder-wheel-page, etc.) -->
+
+<body class="home-page">
+
+    <!-- ================= HEADER (KEEP STRUCTURE) ================= -->
+    <header>
+        <div class="topbar">
+            <a href="index.html" class="logo">South Bronx Guide</a>
+
+            <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false"
+                aria-label="Toggle menu">
+               <span class="menu-icon"></span>
+
+            </button>
+        </div>
+
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <!-- CHANGE LINKS IF NEEDED -->
+                <li><a href="guide-macombs.html">Macombs Dam Park</a></li>
+                <li><a href="guide-skate.html">River Avenue Skate Park</a></li>
+                <li><a href="guide-market.html">Bronx Terminal Market</a></li>
+                <li><a href="guide-theater.html">Pregones Theater</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN CONTENT (CHANGE FREELY) ================= -->
+    <main>
+
+        <!-- PAGE HEADING -->
+        <h1>Local Guide of the South Bronx </h1>
+
+        <!-- INTRO TEXT -->
+        <p class="intro">A personal guide that explores my favorite parts of the neighborhood. </p>
+        <p class="explore">The South Bronx is a large neighborhood with deep-rooted history and a big community that has
+            grown substantially over time. The neighborhood holds many hidden gems for the public to enjoy. </p>
+
+        <!-- VIDEO SECTION (OPTIONAL) -->
+        <div class="videoWrapper ratio-16-9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eXskwEjtZk8?si=q5VZ1rKBZk1F1UC7"
+                title="YouTube video player" style="border:0;"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- FEATURED SECTION -->
+        <section class="featured-text-background">
+            <h2>Starting with 161 St-Yankee Stadium</h2>
+
+    <figure>
+    <img src="images/square/161_Street_entrance_vc.jpeg"
+         alt="161 St Station"
+         class="responsive-img">
+
+    <figcaption>
+        <a href="https://commons.wikimedia.org/wiki/File:161_Street_entrance_vc.jpg">
+            Photo by Ken Lund
+        </a>
+    </figcaption>
+</figure>
+
+
+    <p class="wonder-wheel">
+                In the South Bronx, the most well-known station is 161 St-Yankee Stadium. As the name suggests, this is
+                the stop where passengers disembark to visit the famous stadium, which is located directly outside the
+                station.
+
+            </p>
+
+            <p class="coney-island">
+                Three subway lines serve this station: the 4, B, and D trains. For passengers on a Manhattan-bound 4
+                train, the preceding stop is 149 St–Grand Concourse, which is also located in the South Bronx. In
+                addition to the 4 train, the 149 St-Grand Concorse station provides transfers to the 2 and 5 lines.
+            </p>
+        </section>
+
+        <!-- GRID SECTION -->
+        <h3>Upcoming on the Tour... </h3>
+
+        <div class="guides-grid">
+            <div class="guide">
+                <figure>
+                    <img src="images/square/macombs-dam-pk.jpg" alt="Macombs Dam Park">
+                    <figcaption>
+                        <a
+                            href="https://commons.wikimedia.org/wiki/File:Macombs_Dam_Pk_td_%282019-01-24%29_173_-_Track_and_Field,_Yankee_Stadium.jpg">Photo
+                            by Tdorante10</a>
+                    </figcaption>
+                </figure>
+                <h3>Macombs Dam Park</h3>
+            </div>
+            <div class="guide">
+                <figure>
+                    <img src="images/square/river-avenue-skate-park.jpg" alt="River Skate Park">
+                    <figcaption><a href="https://www.flickr.com/photos/imjustwalkin/7186250564">Photo
+                            by
+                            Matt Green</a></figcaption>
+                </figure>
+                <h3>River Avenue Skate Park</h3>
+            </div>
+            <div class="guide">
+                <figure>
+                    <img src="images/square/bronx-terminal-market.jpg" alt="Bronx Terminal Market">
+                    <figcaption><a href="https://commons.wikimedia.org/wiki/File:Bronx_mall_152_St_jeh.jpg">Photo
+                            by
+                            Jim Henderson</a></figcaption>
+                </figure>
+                <h3>Bronx Terminal Market</h3>
+            </div>
+            <div class="guide">
+                <figure>
+                    <img src="images/square/pregones-theater.jpg" alt="Pregones Theater">
+                    <figcaption><a href="https://www.nyctourism.com/places/pregones-theater-south-bronx-nyc/">Photo
+                            by
+                            Julienne Schaer</a></figcaption>
+                </figure>
+                <h3>Pregones Theater</h3>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ================= FOOTER (KEEP) ================= -->
+    <footer>
+        <p>Site by Eliane Jimenez</p>
+    </footer>
+
+    <!-- ================= NAV SCRIPT (KEEP) ================= -->
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', () => {
+            const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', String(!expanded));
+            menu.classList.toggle('is-open');
+        });
+    </script>
+
+</body>
+
+</html>

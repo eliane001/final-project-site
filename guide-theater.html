@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CHANGE THIS TITLE PER PAGE -->
+    <title>Pregones Theater</title>
+
+    <!-- Fonts (keep) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Text:ital@0;1&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Lexend:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Page-specific tweaks only -->
+    <style>
+        body {
+            font-family: American Typewriter, serif;
+            font-size: 25px;
+            margin: 0;
+            padding: 0;
+            background-color: #525770;
+            color: #0b1c11;
+        }
+
+        h1 {
+            font-family: "American Typewriter", serif;
+            font-size: 2.5em;
+            text-align: center;
+        }
+    </style>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- CHANGE body class PER PAGE (home-page, wonder-wheel-page, etc.) -->
+
+<body class="home-page">
+
+    <!-- ================= HEADER (KEEP STRUCTURE) ================= -->
+    <header>
+        <div class="topbar">
+            <a href="index.html" class="logo">South Bronx Guide</a>
+
+            <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false"
+                aria-label="Toggle menu">
+               <span class="menu-icon"></span>
+
+            </button>
+        </div>
+
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <!-- CHANGE LINKS IF NEEDED -->
+                <li><a href="guide-macombs.html">Macombs Dam Park</a></li>
+                <li><a href="guide-skate.html">River Avenue Skate Park</a></li>
+                <li><a href="guide-market.html">Bronx Terminal Market</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN CONTENT (CHANGE FREELY) ================= -->
+    <main>
+
+        <!-- PAGE HEADING -->
+        <h1>Pregones Theater</h1>
+
+        <!-- INTRO TEXT -->
+        <p class="intro">A personal guide that explores my favorite parts of the neighborhood. </p>
+        <p class="explore">The South Bronx is a large neighborhood with deep-rooted history and a big community that has
+            grown substantially over time. The neighborhood holds many hidden gems for the public to enjoy. </p>
+
+        <!-- VIDEO SECTION (OPTIONAL) -->
+        <div class="videoWrapper ratio-16-9">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/5BNXAVdblXE?si=aOwzGx4Ltwhf5HV1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- FEATURED SECTION -->
+        <section class="featured-text-background">
+            <h2>Significance of the Pregones Theater</h2>
+
+    <figure>
+    <img src="images/pregones-theater.jpeg"
+         alt="Skate Park"
+         class="responsive-img">
+
+    <figcaption>
+        <a href="https://www.nyctourism.com/places/pregones-theater-south-bronx-nyc/">
+            Photo by Julienne Schaer
+        </a>
+    </figcaption>
+</figure>
+
+
+    <p class="wonder-wheel">
+               A thirteen-minute walk from the 161 St station, Pregones Theater, which was founded in 1979, has grown into a respected South Bronx institution dedicated to Puerto Rican and Latinx performing arts. Pregones Theater has significantly helped the community by using the arts as a tool for social awareness, health, and empowerment in under-resourced neighborhoods in the South Bronx
+
+            </p>
+
+        </section>
+        <div class="more-info">
+  <h3>More Info</h3>
+  <ul class="more-info-container">
+    <li><a href="https://en.wikipedia.org/wiki/Puerto_Rican_Traveling_Theater">Wikipedia: Puerto Rican Traveling Theater</a></li>
+    <li><a href="https://www.nyctourism.com/places/pregones-theater-south-bronx-nyc/">NYC Tourism – Pregones Theater</a></li>
+  </ul>
+</div>
+
+
+        <nav id="pagination" aria-label="Pagination">
+            <a class="btn" rel="prev" href="guide-market.html">← Previous</a>
+            <a class="btn" rel="next" href="guide-macombs.html">Next →</a>
+        </nav>
+    </main>
+    <!-- ================= FOOTER (KEEP) ================= -->
+    <footer>
+        <p>Site by Eliane Jimenez</p>
+    </footer>
+
+    <!-- ================= NAV SCRIPT (KEEP) ================= -->
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', () => {
+            const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', String(!expanded));
+            menu.classList.toggle('is-open');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CHANGE THIS TITLE PER PAGE -->
+    <title>Macombs Dam Park</title>
+
+    <!-- Fonts (keep) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Text:ital@0;1&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Lexend:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Page-specific tweaks only -->
+    <style>
+        body {
+            font-family: American Typewriter, serif;
+            font-size: 25px;
+            margin: 0;
+            padding: 0;
+            background-color: #525770;
+            color: #0b1c11;
+        }
+
+        h1 {
+            font-family: "American Typewriter", serif;
+            font-size: 2.5em;
+            text-align: center;
+        }
+    </style>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- CHANGE body class PER PAGE (home-page, wonder-wheel-page, etc.) -->
+
+<body class="home-page">
+
+    <!-- ================= HEADER (KEEP STRUCTURE) ================= -->
+    <header>
+        <div class="topbar">
+            <a href="index.html" class="logo">South Bronx Guide</a>
+
+            <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false"
+                aria-label="Toggle menu">
+               <span class="menu-icon"></span>
+
+            </button>
+        </div>
+
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <!-- CHANGE LINKS IF NEEDED -->
+                <li><a href="guide-skate.html">River Avenue Skate Park</a></li>
+                <li><a href="guide-market.html">Bronx Terminal Market</a></li>
+                <li><a href="guide-theater.html">Pregones Theater</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN CONTENT (CHANGE FREELY) ================= -->
+    <main>
+
+        <!-- PAGE HEADING -->
+        <h1>Macombs Dam Park </h1>
+
+        <!-- INTRO TEXT -->
+        <p class="intro"> A park just across the Yankee Stadium that has a baseball field just a grand with it's many sporting facilities!    </p>
+        <!-- VIDEO SECTION (OPTIONAL) -->
+        <div class="videoWrapper ratio-16-9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/phsmGjqLUXw?si=khy_wlBOWn6d9Sq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- FEATURED SECTION -->
+        <section class="featured-text-background">
+            <h2>Significance of Macombs </h2>
+
+    <figure>
+    <img src="images/macombs-dam-pk.jpg"
+         alt="161 St Station"
+         class="responsive-img">
+
+    <figcaption>
+        <a href="https://commons.wikimedia.org/wiki/File:Macombs_Dam_Pk_td_%282019-01-24%29_173_-_Track_and_Field,_Yankee_Stadium.jpg">
+            Photo by Tdorante10
+        </a>
+    </figcaption>
+</figure>
+
+
+    <p class="wonder-wheel">
+               Just a two-minute walk from the 161 St-Yankee Stadium station, you'll find Macombs Dam Park. This site is historically significant because it's where the original Yankee Stadium once stood before it was moved one block north in 2009. 
+            </p>
+
+            <p class="coney-island">
+                The park is a fantastic spot to visit before a game! You can wander around to take in the sight of the stadium, watch locals compete on the fields, or even join in for a quick workout yourself.
+            </p>
+        </section>
+        <div class="more-info">
+  <h3>More Info</h3>
+  <ul class="more-info-container">
+    <li><a href="https://en.wikipedia.org/wiki/Macombs_Dam_Park">Wikipedia: Macombs Dam Park</a></li>
+    <li><a href="https://www.nyctourism.com/sports/macombs-dam-park/">NYC Tourism – Macombs Dam Park</a></li>
+  </ul>
+</div>
+
+
+        <nav id="pagination" aria-label="Pagination">
+            <a class="btn" rel="prev" href="guide-theater.html">← Previous</a>
+            <a class="btn" rel="next" href="guide-skate.html">Next →</a>
+        </nav>
+    </main>
+    <!-- ================= FOOTER (KEEP) ================= -->
+    <footer>
+        <p>Site by Eliane Jimenez</p>
+    </footer>
+
+    <!-- ================= NAV SCRIPT (KEEP) ================= -->
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', () => {
+            const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', String(!expanded));
+            menu.classList.toggle('is-open');
+        });
+    </script>
+
+</body>
+
+</html>
